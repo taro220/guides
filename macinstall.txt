@@ -1,0 +1,41 @@
+// After you install homebrew, in your terminal type
+brew install node
+
+// to check your version of node, you can type
+node -v
+
+// You now have access to npm. Use it to install nodemon
+npm install -g nodemon
+
+// Check if you have Git
+git --version
+// If you don't, head to https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+// and follow the instructions.
+
+// Install Mongodb
+brew install Mongodb
+cd
+mkdir data
+cd data
+mkdir db
+
+// You can now run a mongodb server.
+// ** WARNING! Don't close this terminal or type anything after you run your mongodb server
+// use Control + C to shut down the server before closing **
+// Type mongod to run
+mongod
+
+// you might need to use sudo for permission issues
+sudo mongod
+
+// Now open a new terminal and type
+mongo
+
+// This will run the mongo shell and you can start using mongo commands
+
+// ** Note! If you accidentally shut your terminal down improperly, type this to stop the server
+// that is a straight slash | , not an l
+ps -ax | grep mongo
+
+// find the process number for mongo and then type WITHOUT the quotes
+sudo kill "number"
